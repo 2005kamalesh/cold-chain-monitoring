@@ -1,0 +1,7 @@
+product_id,product_name,category,storage_class,created_at
+PRD-000001,Vaccine A,Vaccine,2 to 8 C,2026-01-01
+PRD-000002,Insulin B,Biologic,2 to 8 C,2026-01-01
+PRD-000003,Frozen Biologic C,Frozen Biologic,-25 to -15 C,2026-01-01
+PRD-000004,Tablets D,Controlled Room Temp,15 to 25 C,2026-01-01
+PRD-000005,Dairy Product E,Dairy,1 to 6 C,2026-01-01
+PRD-000006,Diagnostic Reagent F,Reagent,2 to 8 C,2026-01-01

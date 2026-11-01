@@ -1,0 +1,11 @@
+pandas
+numpy
+pymysql        # only needed when DATABASE_URL points to MySQL
+fastapi
+uvicorn
+streamlit
+plotly
+requests
+pytest
+matplotlib     # only for `python run.py report`
+openpyxl       # only for `python run.py report`

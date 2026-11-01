@@ -1,0 +1,111 @@
+{
+  "level": "instance (1 injected anomaly = 1 unit); shipment-level confusion matrix reported separately for excursions",
+  "by_issue_type": {
+    "TEMPERATURE_EXCURSION": {
+      "TP": 192,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "HUMIDITY_EXCURSION": {
+      "TP": 65,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "MISSING_INTERVAL": {
+      "TP": 137,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "PHYSICAL_RANGE_VIOLATION": {
+      "TP": 26,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "DELIVERY_BEFORE_DEPARTURE": {
+      "TP": 8,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "POLICY_MISMATCH": {
+      "TP": 8,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "ROUTE_DELAY": {
+      "TP": 55,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "CALIBRATION_EXPIRED": {
+      "TP": 50,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "LATE_ARRIVAL": {
+      "TP": 37,
+      "FP": 0,
+      "FN": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "BOUNDARY_INCLUSIVE (no excursion expected)": {
+      "cases": 10,
+      "false_excursions": 0,
+      "passed": true
+    }
+  },
+  "timing_and_label_errors": {
+    "TEMPERATURE": {
+      "matched": 192,
+      "duration_abs_error_min_max": 0.0,
+      "end_time_exact": 1.0,
+      "severity_accuracy": 1.0,
+      "actionable_accuracy": 1.0
+    },
+    "HUMIDITY": {
+      "matched": 65,
+      "duration_abs_error_min_max": 0.0,
+      "end_time_exact": 1.0,
+      "severity_accuracy": 1.0,
+      "actionable_accuracy": 1.0
+    },
+    "MISSING_INTERVAL": {
+      "missing_interval_count_exact": 1.0,
+      "tolerance_flag_accuracy": 1.0
+    }
+  },
+  "shipment_level_excursion_detection": {
+    "TP": 253,
+    "FP": 0,
+    "FN": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "TN": 747
+  }
+}

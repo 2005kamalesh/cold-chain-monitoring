@@ -1,0 +1,61 @@
+{
+  "generator": "coldchain.generator",
+  "seed": 20261022,
+  "shipments": 1000,
+  "containers": 300,
+  "external_data": "none (fully synthetic; no third-party data used)",
+  "files": {
+    "ground_truth.csv": {
+      "rows": 588,
+      "md5": "9b5c32f93d32c3dcec87cae8c91a13a1"
+    },
+    "shipment_scenarios.csv": {
+      "rows": 1000,
+      "md5": "60870dfe653380e38ba6d5f096169eac"
+    },
+    "containers.csv": {
+      "rows": 300,
+      "md5": "f81bf9b6fcaacec8779cbf5b7f2c814a"
+    },
+    "custody_events.csv": {
+      "rows": 4974,
+      "md5": "7e24b489200baf93e397934e4596e8e0"
+    },
+    "products.csv": {
+      "rows": 6,
+      "md5": "655fe3edc00052e60d3cf1d11745e5d5"
+    },
+    "route_stops.csv": {
+      "rows": 3487,
+      "md5": "0f53b9297998cb1b9be7a7861312515e"
+    },
+    "sensor_calibrations.csv": {
+      "rows": 3050,
+      "md5": "22fc91f8ab8c74743de75efd44cb5725"
+    },
+    "sensor_readings.csv": {
+      "rows": 2027840,
+      "md5": "c24ef92fce1004d7c62380f166f3af96"
+    },
+    "sensors.csv": {
+      "rows": 600,
+      "md5": "be14d924f38f768737e27a007bf2c483"
+    },
+    "shipment_sensor_assignments.csv": {
+      "rows": 2000,
+      "md5": "fcaa5fbdf7b646323970e566c8eeffa0"
+    },
+    "shipment_status_events.csv": {
+      "rows": 4000,
+      "md5": "89293cc2bd5c969d944452c0e290048b"
+    },
+    "shipments.csv": {
+      "rows": 1000,
+      "md5": "d158217ff1a37318b9c3de7ce519036f"
+    },
+    "threshold_policies.csv": {
+      "rows": 12,
+      "md5": "76ec96606ede13b547ef5cd15948d187"
+    }
+  }
+}

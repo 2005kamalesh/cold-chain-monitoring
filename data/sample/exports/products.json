@@ -1,0 +1,6 @@
+[{"product_id": "PRD-000001", "product_name": "Vaccine A", "category": "Vaccine", "storage_class": "2 to 8 C", "created_at": "2026-01-01"},
+{"product_id": "PRD-000002", "product_name": "Insulin B", "category": "Biologic", "storage_class": "2 to 8 C", "created_at": "2026-01-01"},
+{"product_id": "PRD-000003", "product_name": "Frozen Biologic C", "category": "Frozen Biologic", "storage_class": "-25 to -15 C", "created_at": "2026-01-01"},
+{"product_id": "PRD-000004", "product_name": "Tablets D", "category": "Controlled Room Temp", "storage_class": "15 to 25 C", "created_at": "2026-01-01"},
+{"product_id": "PRD-000005", "product_name": "Dairy Product E", "category": "Dairy", "storage_class": "1 to 6 C", "created_at": "2026-01-01"},
+{"product_id": "PRD-000006", "product_name": "Diagnostic Reagent F", "category": "Reagent", "storage_class": "2 to 8 C", "created_at": "2026-01-01"}]

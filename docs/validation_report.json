@@ -1,0 +1,427 @@
+[
+  {
+    "name": "PK unique: products",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: threshold_policies",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: containers",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: sensors",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: sensor_calibrations",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: shipments",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: shipment_sensor_assignments",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: shipment_status_events",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: route_stops",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: custody_events",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: sensor_readings",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: monitoring_gaps",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: excursions",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: shipment_issues",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: notifications",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: corrective_actions",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: corrective_action_events",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: reading_flags",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "PK unique: shipment_summary",
+    "passed": true,
+    "detail": "0 duplicates"
+  },
+  {
+    "name": "FK valid: threshold_policies.product_id -> products",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: sensors.container_id -> containers",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: sensor_calibrations.sensor_id -> sensors",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: shipments.product_id -> products",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: shipments.container_id -> containers",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: shipments.policy_id -> threshold_policies",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: shipment_sensor_assignments.shipment_id -> shipments",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: shipment_sensor_assignments.sensor_id -> sensors",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: shipment_status_events.shipment_id -> shipments",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: route_stops.shipment_id -> shipments",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: custody_events.shipment_id -> shipments",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: custody_events.route_stop_id -> route_stops",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: sensor_readings.sensor_id -> sensors",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: sensor_readings.shipment_id -> shipments",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: sensor_readings.route_stop_id -> route_stops",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: reading_flags.reading_id -> sensor_readings",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: monitoring_gaps.shipment_id -> shipments",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: monitoring_gaps.sensor_id -> sensors",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: excursions.shipment_id -> shipments",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: excursions.sensor_id -> sensors",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: excursions.policy_id -> threshold_policies",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: shipment_issues.shipment_id -> shipments",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: notifications.shipment_id -> shipments",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: notifications.excursion_id -> excursions",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: notifications.gap_id -> monitoring_gaps",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: notifications.issue_id -> shipment_issues",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: corrective_actions.excursion_id -> excursions",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: corrective_action_events.action_id -> corrective_actions",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "FK valid: shipment_summary.shipment_id -> shipments",
+    "passed": true,
+    "detail": "0 orphans"
+  },
+  {
+    "name": "Enum: shipments.status",
+    "passed": true,
+    "detail": "0 invalid"
+  },
+  {
+    "name": "Enum: sensors.sensor_type",
+    "passed": true,
+    "detail": "0 invalid"
+  },
+  {
+    "name": "Enum: shipment_status_events.new_status",
+    "passed": true,
+    "detail": "0 invalid"
+  },
+  {
+    "name": "Enum: sensors.unit",
+    "passed": true,
+    "detail": "0 invalid"
+  },
+  {
+    "name": "Enum: sensor_calibrations.result",
+    "passed": true,
+    "detail": "0 invalid"
+  },
+  {
+    "name": "Enum: route_stops.stop_type",
+    "passed": true,
+    "detail": "0 invalid"
+  },
+  {
+    "name": "Enum: custody_events.event_type",
+    "passed": true,
+    "detail": "0 invalid"
+  },
+  {
+    "name": "Enum: excursions.excursion_type",
+    "passed": true,
+    "detail": "0 invalid"
+  },
+  {
+    "name": "Enum: excursions.direction",
+    "passed": true,
+    "detail": "0 invalid"
+  },
+  {
+    "name": "Enum: excursions.severity",
+    "passed": true,
+    "detail": "0 invalid"
+  },
+  {
+    "name": "Enum: excursions.status",
+    "passed": true,
+    "detail": "0 invalid"
+  },
+  {
+    "name": "Enum: corrective_actions.status",
+    "passed": true,
+    "detail": "0 invalid"
+  },
+  {
+    "name": "Enum: monitoring_gaps.status",
+    "passed": true,
+    "detail": "0 invalid"
+  },
+  {
+    "name": "Enum: notifications.status",
+    "passed": true,
+    "detail": "0 invalid"
+  },
+  {
+    "name": "Date order: delivery >= departure (excluding labelled DELIVERY_BEFORE_DEPARTURE cases)",
+    "passed": true,
+    "detail": "8 violations, 0 unlabelled"
+  },
+  {
+    "name": "Date order: planned arrival > planned departure",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Route stop times ascend with sequence",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Policy effective_from < effective_to",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Policies of one product do not overlap",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Lifecycle: shipment CREATED->DISPATCHED->IN_TRANSIT->DELIVERED in time order (labelled cases excused)",
+    "passed": true,
+    "detail": "8 violations, 0 unlabelled"
+  },
+  {
+    "name": "Assigned sensors are installed in the shipment's container",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Every shipment has a sensor assigned (monitoring coverage)",
+    "passed": true,
+    "detail": "0 uncovered"
+  },
+  {
+    "name": "Custody timeline ordered",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "No custody event before dispatch",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Duplicate readings (sensor, timestamp)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Readings link to the right shipment (sensor container == shipment container)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Readings link to a route stop of the same shipment",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "No container assigned to overlapping shipments",
+    "passed": true,
+    "detail": "0 overlaps"
+  },
+  {
+    "name": "Reconcile: excursion duration == (ended - started) minutes",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Reconcile: actionable <=> duration > permissible",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Reconcile: gap missing_intervals == gap_minutes/5 - 1",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Reconcile: expected intervals == received + missing (per shipment, both sensors averaged)",
+    "passed": true,
+    "detail": "max diff 0.0"
+  },
+  {
+    "name": "Reconcile: summary excursion_count == excursions rows",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Lifecycle: corrective action OPEN->ASSIGNED->IN_PROGRESS->RESOLVED->VERIFIED, no skipped/VERIFIED-without-RESOLVED",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Lifecycle: action.status == last history event",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Every actionable excursion has >=1 corrective action and a notification",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "name": "Excursion duplicates (shipment, sensor, start)",
+    "passed": true,
+    "detail": ""
+  }
+]

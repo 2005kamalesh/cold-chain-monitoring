@@ -1,0 +1,8 @@
+[{"container_id": "CNT-000001", "container_type": "REEFER_TRUCK", "capacity_kg": 900, "status": "ACTIVE"},
+{"container_id": "CNT-000002", "container_type": "INSULATED_BOX", "capacity_kg": 500, "status": "ACTIVE"},
+{"container_id": "CNT-000003", "container_type": "PALLET_SHIPPER", "capacity_kg": 1000, "status": "ACTIVE"},
+{"container_id": "CNT-000004", "container_type": "REEFER_CONTAINER", "capacity_kg": 1400, "status": "ACTIVE"},
+{"container_id": "CNT-000005", "container_type": "REEFER_CONTAINER", "capacity_kg": 900, "status": "ACTIVE"},
+{"container_id": "CNT-000006", "container_type": "INSULATED_BOX", "capacity_kg": 1400, "status": "ACTIVE"},
+{"container_id": "CNT-000007", "container_type": "REEFER_TRUCK", "capacity_kg": 3100, "status": "ACTIVE"},
+{"container_id": "CNT-000008", "container_type": "PALLET_SHIPPER", "capacity_kg": 2100, "status": "ACTIVE"}]

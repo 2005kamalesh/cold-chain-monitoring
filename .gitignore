@@ -1,0 +1,6 @@
+*.db
+data/raw/sensor_readings.csv
+data/derived/
+data/exports/
+__pycache__/
+myenv/
