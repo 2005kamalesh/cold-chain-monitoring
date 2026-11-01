@@ -46,17 +46,14 @@ The data is stored in `cold_chain.db` (created in the project folder). The gener
 ## Step 2: Start the application
 Use two terminals. In both, activate the virtual environment first (see Setup).
 
-1.Terminal 1, the API:
-======================
-
+Terminal 1, the API:
+```
 uvicorn coldchain.api:app
-
-
-2.Terminal 2, the dashboard:
-============================
-
+```
+Terminal 2, the dashboard:
+```
 streamlit run dashboard.py
-
+```
 Open http://localhost:8501 in the browser. The API documentation is at http://localhost:8000/docs. The API must be running before you open the dashboard.
 
 In the dashboard, shipments that are fully compliant have no excursions, gaps or issues. To see those, use the Compliance filter on the Shipment monitoring page and choose a status other than COMPLIANT.
@@ -68,6 +65,30 @@ python tests/test_engine.py          # unit tests for the detection logic
 python tests/test_negative_cases.py  # tests with damaged data (needs data/raw from Step 1)
 ```
 `pytest -q` runs the same tests if pytest is installed.
+
+## Check that it works
+After `python run.py all` (full size) you should see these results:
+- the validation step prints `85/85 validation checks passed`
+- the evaluation step prints TP, FP and FN per problem type, with FP = 0 and FN = 0 on every line
+- `reproduce` prints `Reproducibility: IDENTICAL`
+
+With the API running, open http://localhost:8000/dashboard/summary. It should show 1000 shipments, 614 compliant, 257 excursions and 137 monitoring gaps.
+
+In the dashboard (Shipment monitoring page), open these shipments to see each case:
+| Shipment | What to look for |
+|---|---|
+| SHP-2026-000015 | an excursion |
+| SHP-2026-000020 | a monitoring gap (missing readings) |
+| SHP-2026-000005 | a POLICY_MISMATCH issue (wrong product limits) |
+| SHP-2026-000001 | fully compliant, so the Excursions, Gaps and Issues tabs are empty |
+
+The numbers above are for the full run with seed 20261022. A smaller run gives smaller numbers.
+
+## How I worked and used AI
+- `ai_usage/prompt_history.md`: every prompt I sent to AI tools
+- `ai_usage/ai_disclosure.md`: where AI was used, how much, and what I checked
+- `docs/design_decisions.md`: assumptions, trade-offs, limits and next steps
+- `docs/project_explanation.md`: a short plain explanation of the project
 
 ## Export the data (CSV, JSON, SQL)
 ```
